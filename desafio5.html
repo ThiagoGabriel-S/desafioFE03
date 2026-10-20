@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog do desenvolvedor</title>
+    <style>
+        :root {
+            --bg: #f6f7f9;
+            --card: #ffffff;
+            --text: #222;
+            --muted: #666;
+            --accent: #5b4bdb;
+            --border: #e2e4e9;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            padding: 2rem 1rem;
+            background: var(--bg);
+            color: var(--text);
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+            padding: 0.9rem 1.25rem;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.3rem;
+        }
+
+        nav a {
+            margin-left: 1rem;
+            font-size: 0.95rem;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        article {
+            padding: 1.5rem 1.25rem;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+        }
+
+        article h2 {
+            margin: 0 0 1rem;
+            font-size: 1.6rem;
+        }
+
+        blockquote {
+            margin: 0 0 1.5rem;
+            padding: 0.25rem 0 0.25rem 1rem;
+            border-left: 4px solid var(--accent);
+            color: var(--muted);
+            font-style: italic;
+        }
+
+        figure {
+            margin: 0;
+            text-align: center;
+        }
+
+        figure img {
+            display: block;
+            width: 100%;
+            max-width: 420px;
+            height: auto;
+            margin: 0 auto;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        figcaption {
+            max-width: 420px;
+            margin: 0.6rem auto 0;
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        footer {
+            margin-top: 1.5rem;
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Blog do desenvolvedor</h1>
+            <nav>
+                <a href="#artigo">Artigo</a>
+                <a href="#sobre">Sobre</a>
+            </nav>
+        </header>
+
+        <main>
+            <article id="artigo">
+                <h2>A importância da Semântica Web</h2>
+
+                <blockquote>
+                    <p>
+                        "A semântica garante que leitores de tela e robôs
+                        de busca compreendam a função real de cada bloco da interface."
+                    </p>
+                </blockquote>
+
+                <figure>
+                    <img src="https://cdn.pixabay.com/photo/2016/03/27/18/54/technology-1283624_1280.jpg" alt="Close-up de código web na tela">
+                    <figcaption>
+                        Figura: Código web colorido em tela escura para conceitos de tecnologia e programação.
+                    </figcaption>
+                </figure>
+            </article>
+        </main>
+
+        <footer>
+            <p>© 2026 Blog do Desenvolvedor • Todos os direitos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>

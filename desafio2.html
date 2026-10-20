@@ -1,21 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <img src="https://i.ibb.co/gbNQwkqZ/download-2-1.jpg" alt="download (2) (1)">
-    <p><strong>Gustavo Fring</strong></p>
-    <p>gerente do Los Polos Hermanos</p>
-   
-    <a href='tel: (032) 91602-4002'>tel: (032) 91602-4002</a>
-    <br>
-    <a href="mailto: gustavofring41@gmail.com">email: gustavofring41@gmail.com</a>
-    <br>
-    <a href="https://github.com/ThiagoGabriel-S" target='_blank'>Acessar github</a>
+    <title>Gustavo Fring</title>
+    <style>
+        :root {
+            --bg: #f6f7f9;
+            --card: #ffffff;
+            --text: #222;
+            --muted: #666;
+            --accent: #5b4bdb;
+            --border: #e2e4e9;
+        }
 
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            padding: 2rem 1rem;
+            background: var(--bg);
+            color: var(--text);
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+        }
+
+        main {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .perfil {
+            padding: 2rem 1.25rem;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .perfil img {
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid var(--accent);
+        }
+
+        .perfil h2 {
+            margin: 1rem 0 0.2rem;
+            font-size: 1.6rem;
+        }
+
+        .cargo {
+            margin: 0 0 1.25rem;
+            color: var(--muted);
+        }
+
+        ul {
+            margin: 0;
+            padding: 1rem 0 0;
+            list-style: none;
+            border-top: 1px solid var(--border);
+        }
+
+        li {
+            margin: 0.4rem 0;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    
+    <main>
+        <section class="perfil">
+            <img src="https://i.ibb.co/gbNQwkqZ/download-2-1.jpg" alt="Foto de Gustavo Fring">
+
+            <h2>Gustavo Fring</h2>
+            <p class="cargo">Gerente do Los Polos Hermanos</p>
+
+            <ul>
+                <li><a href="tel:+5532916024002">Tel: (032) 91602-4002</a></li>
+                <li><a href="mailto:gustavofring41@gmail.com">E-mail: gustavofring41@gmail.com</a></li>
+                <li><a href="https://github.com/ThiagoGabriel-S" target="_blank" rel="noopener">Acessar github</a></li>
+            </ul>
+        </section>
+    </main>
 </body>
 </html>

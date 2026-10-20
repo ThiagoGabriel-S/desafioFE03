@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perguntas frequentes</title>
+    <style>
+        :root {
+            --bg: #f6f7f9;
+            --card: #ffffff;
+            --text: #222;
+            --muted: #666;
+            --accent: #5b4bdb;
+            --border: #e2e4e9;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            padding: 2rem 1rem;
+            background: var(--bg);
+            color: var(--text);
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+        }
+
+        main {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        nav {
+            margin-bottom: 1.5rem;
+            padding: 0.75rem 1rem;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 0.95rem;
+        }
+
+        nav a {
+            margin: 0 0.4rem;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        h2 {
+            margin: 0 0 1rem;
+            font-size: 1.6rem;
+        }
+
+        details {
+            margin-bottom: 0.75rem;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        summary {
+            padding: 0.9rem 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        summary::-webkit-details-marker { display: none; }
+
+        summary::after {
+            content: "+";
+            font-size: 1.3rem;
+            color: var(--accent);
+            transition: transform 0.2s;
+        }
+
+        details[open] summary::after {
+            content: "−";
+        }
+
+        summary:hover {
+            background: #f0effc;
+        }
+
+        details p {
+            margin: 0;
+            padding: 0.9rem 1rem 1.1rem;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
+        }
+
+        details:target {
+            border-color: var(--accent);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <nav>
+            <strong>Índice:</strong>
+            <a href="#duvida-1">Dúvida 1</a> |
+            <a href="#duvida-2">Dúvida 2</a>
+        </nav>
+
+        <h2>Perguntas frequentes</h2>
+
+        <details id="duvida-1" open>
+            <summary>Qual a diferença entre RogueLike e RogueLite?</summary>
+            <p>
+                Os jogos RogueLike têm como principal característica a morte permanente,
+                salas geradas proceduralmente e perda total do progresso do jogador,
+                não levando absolutamente nenhuma melhoria,<br>
+                enquanto jogos RogueLite também compartilham das mesmas características,
+                mas permitem o jogador levar alguma melhoria da última jogada.
+            </p>
+        </details>
+
+        <details id="duvida-2">
+            <summary>Exemplos</summary>
+            <p>
+                Exemplo de RogueLike:
+                <a href="https://store.steampowered.com/app/333300/ADOM_Ancient_Domains_Of_Mystery/">ADOM</a>
+                <br>
+                Exemplo de RogueLite:
+                <a href="https://store.steampowered.com/app/250900/The_Binding_of_Isaac_Rebirth/">The Binding of Isaac: Rebirth</a>
+            </p>
+        </details>
+    </main>
+</body>
+</html>
